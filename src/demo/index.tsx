@@ -1,6 +1,6 @@
 import { TAsyncResult } from "../useAsyncValue";
 import { TRoute } from "../types";
-
+import {ButtonList} from "./Buttons";
 export function DemoTitle({
   dataResult,
   routeParams,
@@ -8,14 +8,16 @@ export function DemoTitle({
   dataResult: TAsyncResult<null>;
   routeParams: {};
 }) {
-  return <>Demo</>;
+  return <>Schweinerei</>;
 }
 
 export function DemoContent(props: {
   dataResult: TAsyncResult<null>;
   routeParams: {};
 }) {
-  return <>Demo</>;
+  return <>
+  <ButtonList></ButtonList>
+  </>;
 }
 
 export const demoRoute: TRoute<any, any> = {
